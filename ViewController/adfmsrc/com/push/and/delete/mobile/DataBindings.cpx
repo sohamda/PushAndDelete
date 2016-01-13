@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.2.1" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.push.and.delete.mobile" ClientType="Generic">
+  <pageMap>
+    <page path="/localData/localData.amx" usageId="com_push_and_delete_mobile_localDataPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_push_and_delete_mobile_localDataPageDef" path="localData.localDataPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ServiceDC" path="com.push.and.delete.mobile.ServiceDC"/>
+  </dataControlUsages>
+</Application>

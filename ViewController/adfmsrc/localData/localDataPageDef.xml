@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="localDataPageDef"
+                Package="localData">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="ServiceDC" id="ServiceDCIterator"/>
+    <accessorIterator MasterBinding="ServiceDCIterator" Binds="localData" RangeSize="25" DataControl="ServiceDC"
+                      BeanClass="com.push.and.delete.mobile.PushAndDelete" id="localDataIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="localDataIterator" id="localData">
+      <nodeDefinition DefName="com.push.and.delete.mobile.PushAndDelete" Name="localData0">
+        <AttrNames>
+          <Item Value="firstName"/>
+          <Item Value="lastName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

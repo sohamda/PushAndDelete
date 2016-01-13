@@ -1,0 +1,13 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="PUSHREG" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="PUSHREG">
+        <Contents>
+          <restconnection name="PUSHREG"
+                          url="https://mobileportalsetrial0004dev-mcsdem0004.mobileenv.us2.oraclecloud.com:443"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>
