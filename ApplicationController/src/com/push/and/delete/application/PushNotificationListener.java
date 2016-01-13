@@ -28,7 +28,6 @@ public class PushNotificationListener implements EventListener {
     @Override
     public void onOpen(String token) {
         
-        deleteAllData();
         // Clear error in app scope
         AdfmfJavaUtilities.setELValue(PUSH_ERROR, null);
         
